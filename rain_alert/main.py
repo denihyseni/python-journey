@@ -4,7 +4,7 @@ import os
 
 OMW_ENDPOINT = "https://api.openweathermap.org/data/2.5/forecast?"
 api_key= os.environ.get("OMW_API_KEY")
-account_sid = "AC22222c5828a35f529841f1caf1df3d7b"
+account_sid = os.environ.get("TWILIO_SID")
 auth_token = os.environ.get("AUTH_TOKEN")
 
 weather_params = {
