@@ -19,12 +19,18 @@ driver.get("https://www.python.org/")
 # link = driver.find_element(By.CSS_SELECTOR,value=".documentation-widget a")
 # # print(link.text)
 
-bg_link = driver.find_element(By.XPATH,value='//*[@id="site-map"]/div[2]/div/ul/li[3]/a')
-
-dates = driver.find_elements(By.CLASS_NAME,value="say-no-more")
-
-print(dates[1].text)
+# bg_link = driver.find_element(By.XPATH,value='//*[@id="site-map"]/div[2]/div/ul/li[3]/a')
 
 
+event_times = driver.find_elements(By.CSS_SELECTOR,value=".event-widget time")
+event_names = driver.find_elements(By.CSS_SELECTOR,value=".event-widget li a")
+events = {}
+
+for n in range(len(event_times)):
+    events[n]={
+        "time": event_times[n].text,
+        "name":event_names[n].text
+    }
+print(events)
 
 driver.quit()
