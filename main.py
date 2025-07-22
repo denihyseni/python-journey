@@ -27,6 +27,6 @@ import datetime
 #
 # screen = t.Screen()
 # screen.exitonclick()
-t = datetime.datetime.now().time().strftime()
+# t = datetime.datetime.now().time().strftime()
 
-print(t)
+# print(t)
