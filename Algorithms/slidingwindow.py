@@ -1,6 +1,3 @@
-#All solved by me with the help of ChatGpt which only gives me nudges if im on the right path or not and google on websites like stackoverflow w3 schools etc the whole thought process and implementation is done by me
-
-
 import sys
 
 def maxSum(arr,n,k):

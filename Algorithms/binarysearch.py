@@ -1,8 +1,8 @@
 import time
 
 
-arr = [1, 3, 5, 7, 9, 11, 13, 15]
-target = 13
+arr = [13,11,12,7,4,3,1,0]
+target = 4
 left = 0
 right = len(arr) - 1
 
